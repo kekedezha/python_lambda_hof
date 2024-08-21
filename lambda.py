@@ -30,3 +30,12 @@ print(add_ten(7))
 print(add_twenty(7))
 
 ########################
+
+
+numbers = [3, 7, 12, 18, 20, 21]
+
+squared_nums = map(lambda num: num * num, numbers)
+
+print(list(squared_nums))
+
+###############################
