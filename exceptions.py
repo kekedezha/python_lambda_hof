@@ -1,6 +1,9 @@
+# In Python, there are several built-in Python exceptions that can be raised when an error occurs during the execution of a program.
+# Different types include: SyntaxError, TypeError, NameError, IndexError, KeyError, ValueError, AttributeError, IOError, ZeroDivisionError, ImportError, etc. 
+
+# Create an exception class and pass Exception as a parameter
 class JustNotCoolError(Exception):
     pass
-
 
 x = 2
 try:
