@@ -19,9 +19,19 @@ f.close()
 
 # Format for attempting to open a file that may not exist
 try:
-    f = open("namelist.txt")
+    f = open("names.txt")
     print(f.read())
 except:
     print("The file you want to open does not exist.")
 finally:
     f.close()
+
+# Append - create the file if it does not exist
+
+f = open("names.txt", "a")
+f.write("Nemo")
+f.close()
+
+f = open("names.txt")
+print(f.read())
+f.close()
