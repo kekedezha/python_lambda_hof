@@ -16,3 +16,12 @@ for line in f:
     print(line)
 
 f.close()
+
+# Format for attempting to open a file that may not exist
+try:
+    f = open("namelist.txt")
+    print(f.read())
+except:
+    print("The file you want to open does not exist.")
+finally:
+    f.close()
