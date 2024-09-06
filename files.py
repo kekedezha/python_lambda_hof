@@ -55,3 +55,20 @@ f.close()
 if not os.path.exists("dave.txt"):
     f = open("dave.txt", "x")
     f.close()
+
+# Delete a file
+
+# avoid an error if it doesn't exist
+if os.path.exists("dave.txt"):
+    os.remove("dave.txt")
+else:
+    print("The file you wish to delete does not exist")
+
+
+# with has built-in implicit exception handling
+# close() will be automatically called
+with open("more_names.txt") as f:
+    content = f.read()
+
+with open("names.txt", "w") as f:
+    f.write(content)
